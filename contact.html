@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="/">Home</a>
+                        <a class="nav-link " aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./about.html">About</a>
@@ -52,12 +52,83 @@
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">Search</button> -->
+                    <button type="button" class="btn btn-primary mx-2" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">SignUp</button>
+                    <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                        data-bs-target="#logInModal">LogIn</button>
                 </form>
             </div>
         </div>
     </nav>
+     <!-- Sign UP Modal -->
+     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="emailFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="emailFormControlInput1"
+                                placeholder="password">
+                        </div>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Select Your Gender</option>
+                            <option value="1">Male</option>
+                            <option value="2">Female</option>
+                        </select>
+                        <div class="mb-3">
+                            <label for="noFormControlInput1" class="form-label">Contact Number</label>
+                            <input type="text" class="form-control" id="noFormControlInput1" placeholder="number">
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="SignUp">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LogIn Modal -->
+    <div class="modal fade" id="logInModal" tabindex="-1" aria-labelledby="logInModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="logiIModalLabel">Login Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="emailFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailFormControlInput1"
+                                placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="passFormControlInput1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="emailFormControlInput1"
+                                placeholder="password">
+                        </div>
+                        <input class="btn btn-primary" type="submit" value="LogIn">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- -----------FORMS------------ -->
     <form action="">
     <div class="container my-4">
